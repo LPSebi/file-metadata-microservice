@@ -25,3 +25,7 @@ app.post('/', upload.single('file'), (req, res) => {
         size: req.file.size,
     })
 })
+
+app.listen(3000, () => {
+    console.log('Server is running on port 3000')
+})
